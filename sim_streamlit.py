@@ -10,10 +10,10 @@ st.sidebar.header("シミュレーション設定")
 
 # デフォルト値
 initial_investment = st.sidebar.number_input("初期投資額（円）", value=0, step=10000)
-monthly_investment = st.sidebar.number_input("毎月の積立額（円）", value=35000, step=1000)
-years = st.sidebar.number_input("運用期間（年）", value=20, step=1)
-annual_rate_mean = st.sidebar.slider("平均年利 (%)", min_value=0.0, max_value=20.0, value=5.0, step=0.1) / 100
-annual_rate_std = st.sidebar.slider("年利の標準偏差 (%)", min_value=0.0, max_value=20.0, value=2.0, step=0.1) / 100
+monthly_investment = st.sidebar.number_input("毎月の積立額（円）", value=5000, step=1000)
+years = st.sidebar.number_input("運用期間（年）", value=35, step=1)
+annual_rate_mean = st.sidebar.slider("平均年利 (%)", min_value=0.0, max_value=20.0, value=8.0, step=0.1) / 100
+annual_rate_std = st.sidebar.slider("年利の標準偏差 (%)", min_value=0.0, max_value=20.0, value=4.0, step=0.1) / 100
 n_sims = st.sidebar.number_input("シミュレーション回数", value=500, step=50)
 start_date = st.sidebar.date_input("開始年月", value=datetime(2025, 1, 1))
 
